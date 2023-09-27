@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url("./fonts/Pacifico-Regular.ttf");
+}
+
+*{
+    background-color: #DAA520;
+    font-family: 'Pacifico',sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #fffcff
+    background-color: #DAA520;
+    
 }
 
 .header {
@@ -10,7 +21,7 @@ body {
     flex: 0.1;
     justify-content: space-between;
     align-items: center;
-    background-color: #fffcff
+    background-color: #DAA520;
 }
 
 .logo-container {
@@ -20,6 +31,7 @@ body {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    
 }
 
 .title-container {
@@ -37,7 +49,7 @@ body {
     text-decoration: none; 
     padding: 10px 20px; 
     border-radius: 5px; 
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out*/;
 }
         
 .nav-links:hover {
@@ -67,18 +79,41 @@ body {
 
 .content-container-1-right {
     flex: 1;  
-    margin: 1em;
+    margin: 3em;
     padding: 1em;
     background-image: url('./farhan-picture.jpeg');
-    background-size: contain;
+    object-fit: fill;
     background-repeat: no-repeat;
     background-position: center;
+    width: 900px;
+    height: 600px;
+
+    /*used object-fit fill to specify how much space the image should take up in the container,
+    used fill to fill up the container(image was stretched to fit. */
 }
 
-.content-container-2 {
+.call-to-action {
 
+    background-color: #6B4423;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin: 40px;
+    font-style: italic;
+    font-family: 'Pacifico',sans-serif;
+    font-size: larger;
 }
+
+
 
 .footer {
+
+    background-color: #FFB6C1;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 20px;
+    text-align: center;
 
 }
